@@ -1,0 +1,101 @@
+/* 
+Zoológico CSS — Ejercicio de selectores
+---------------------------------------
+INSTRUCCIONES: Completa las TAREAS usando únicamente selectores y reglas CSS. 
+NO modifiques el HTML.
+
+ */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, Arial, sans-serif;
+  line-height: 1.5;
+  padding: 2rem;
+  background: #f6f7f9;
+  color: #1f2937;
+}
+section {
+  margin: 1.25rem 0;
+  padding: 1rem;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+h1,
+h2 {
+  margin: 0 0 0.5rem 0;
+}
+ul {
+  padding-left: 1.25rem;
+}
+footer {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+a {
+  text-decoration: none;
+}
+
+/*TAREA 1: Colorea el título principal (<h1>) en verde.
+Pista: selector  por id.*/
+#titulo {
+  color: green;
+}
+
+/* TAREA 2: Colorea SOLO las descripciones (.descripcion) de la zona de Aves en azul.
+Pista: combina clases descendientes */
+.zona.aves .descripcion {
+  color: blue;
+}
+
+/* TAREA 3: Cambia el fondo de los animales destacados a dorado.*/
+.animal.destacado {
+  background-color: gold;
+}
+/* TAREA 4: Cambia el color del texto de las listas dentro de la sección .mamiferos a marrón.
+Pista: selectores de descendiente (section.mamiferos ul)*/
+section.mamiferos ul {
+  color: brown;
+}
+/*TAREA 5: Los enlaces que comiencen con "https" deben verse en violeta.
+Pista: selector de atributo con ^ (empieza por)*/
+a[href^="https"] {
+  color: violet;
+}
+/*TAREA 6: Al pasar el ratón sobre un .animal, aumenta su tamaño de letra.
+Pista: :hover*/
+.animal:hover {
+  font-size: 1.2rem;
+}
+/*TAREA 7: Da color diferente al primer y último <li> de cada lista.
+Pista: :first-child y :last-child*/
+li:first-child {
+  color: teal;
+}
+li:last-child {
+  color: rgb(126, 126, 42);
+}
+/* TAREA 8: Añade un *** antes del nombre de cada animal.
+Pista: ::before + content*/
+.animal::before {
+  content: "*** ";
+}
+/*  TAREA 9: Subraya el segundo animal de cada lista (nth-child).*/
+.animal:nth-child(2) {
+  text-decoration: underline;
+}
+/* TAREA 10: Da el mismo fondo a todas las "zonas" con [class*="zona"].*/
+.zona {
+  background-color: #e0e0e0;
+}
+/*TAREA 11: Estila el párrafo que sigue inmediatamente a cada h2 dentro de section */
+p:first-of-type {
+  font-style: italic;
+}

@@ -1,0 +1,133 @@
+nav {
+  color: white;
+  background-color: red;
+  line-height: 1.5;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+header {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url("../images/productos.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  z-index: -1;
+}
+.banner-boton {
+  position: absolute;
+  color: white;
+  background-color: red;
+  text-align: center;
+  width: 13%;
+  border-radius: 10px;
+  padding-top: 0%;
+  padding-bottom: 1%;
+  margin-top: 11%;
+  margin-left: 65%;
+  z-index: 10;
+}
+.banner-boton button {
+  border-color: white;
+  background-color: white;
+  border-radius: 10px;
+  color: red;
+}
+
+li {
+  display: inline-block;
+  text-decoration: none;
+  width: 8%;
+}
+main h2 {
+  text-align: center;
+}
+main img {
+  display: inline-block;
+  width: 30%;
+}
+main figure {
+  display: inline-block;
+  margin: 0 5px;
+}
+.eidetesa1 {
+  position: absolute;
+  width: 30%;
+  padding-left: 14%;
+  text-align: center;
+}
+.eidetesa2 {
+  position: absolute;
+  width: 30%;
+  padding-left: 34%;
+  text-align: center;
+}
+.eidetesa3 {
+  position: absolute;
+  width: 30%;
+  padding-left: 54%;
+  text-align: center;
+}
+figcaption {
+  text-align: center;
+}
+.abajo {
+  margin-top: 7%;
+  width: 25%;
+  border: 2px solid rgb(255, 0, 166);
+}
+.arriba {
+  width: 25%;
+  border: 2px solid rgb(255, 0, 166);
+}
+.larga {
+  margin-top: 0%;
+  width: 100%;
+  border: 2px solid red;
+}
+.imagenCuña {
+  margin: auto;
+  font-size: 16px;
+}
+.imagenCuña img {
+  width: 20%;
+}
+.ImagenesJuntas {
+  width: 80%;
+  margin: auto;
+}
+footer {
+  background-color: red;
+  height: auto;
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  color: white;
+}
+.Fila1Imagenes img {
+  width: 15%;
+  text-align: center;
+  display: inline-block;
+}
+.Fila2Imagenes img {
+  width: 15%;
+  text-align: center;
+  display: inline-block;
+}
+.direccion,
+.derechos,
+.redes-sociales {
+  font-size: 14px;
+}
+
+.redes-sociales img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 8px;
+}

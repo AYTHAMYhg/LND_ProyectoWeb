@@ -1,0 +1,47 @@
+html {
+  font-family: Arial, sans-serif;
+  background-color: #00b7ff;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  display: block;
+}
+
+header {
+  background-color: #00b7ff;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  text-align: center;
+}
+.Genero {
+  background-color: #00b7ff;
+  border: 2px solid white;
+  display: flex;
+}
+.columna {
+  width: 31.33%;
+  float: left;
+  margin-right: 2%;
+  background-color: #00b7ff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.columna:last-child {
+  margin-right: 0;
+}
+
+input[type="range"] {
+  height: 5px;
+  margin: 15px 0;
+}
+
+input {
+  background-color: #00b7ff;
+  border: 2px solid white;
+  width: 100%;
+}
